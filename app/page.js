@@ -716,7 +716,7 @@ export default function Home() {
                         </div>
                         <button 
                           type="submit" 
-                          className="bg-emerald-500 hover:bg-emerald-600 text-black font-bold py-4 px-6 rounded-md transition w-full shadow-md hover:shadow-emerald-500/30 text-3xl"
+                          className="w-full bg-emerald-500 text-black font-bold py-4 px-6 rounded-md text-3xl"
                         >
                           Send Message
                         </button>
