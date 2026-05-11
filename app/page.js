@@ -460,14 +460,13 @@ export default function Home() {
             </section>
 
             {/* -------------------------------
-            ✅ EXPERIENCE & EDUCATION: FULLY UPGRADED
+            ✅ EXPERIENCE & EDUCATION: PDF LINKS + HOVER EFFECT ADDED
             ------------------------------- */}
             <section id="experience" className={`${GLOBAL.sectionPadding} bg-gradient-to-b from-gray-900 to-black`}>
               <div className={GLOBAL.container}>
                 <div className="text-center mb-12">
                   <h2 className={`${SIZES.h2} font-bold`}>Experience & <span className="text-emerald-500">Education</span></h2>
                   <div className="w-20 h-1 bg-gradient-to-r from-emerald-500 to-teal-500 mx-auto mt-2 rounded-full mb-4"></div>
-                  {/* ✅ WIDER DESCRIPTION (MATCH ALL OTHER SECTIONS) */}
                   <p className="text-3xl text-gray-400 max-w-6xl mx-auto leading-relaxed">
                     A look at the internships and academic path that built my foundation in software engineering – from microservices to banking systems and beyond.
                   </p>
@@ -476,28 +475,33 @@ export default function Home() {
                 <div className="grid lg:grid-cols-2 gap-12">
                   {/* WORK EXPERIENCE */}
                   <div>
-                    {/* ✅ MORE SPACE BELOW TITLE */}
                     <div className="flex items-center gap-2 mb-10">
                       <i className="fas fa-briefcase text-emerald-500 text-2xl"></i>
                       <h3 className={`${SIZES.h3} font-bold`}>Work Experience</h3>
                     </div>
 
                     <div className="space-y-12 relative border-l-2 border-emerald-500/30 pl-6 ml-4">
+                      {/* SHENZHOU INTERNSHIP */}
                       <div>
                         <div className="absolute -left-3 w-3 h-3 bg-emerald-500 rounded-full"></div>
-                        <h4 className="text-4xl font-bold mb-2">Software Engineer Intern</h4>
                         
-                        {/* ✅ BIGGER COMPANY & DATE FONT */}
+                        {/* CLICKABLE + HOVER EFFECT */}
+                        <a 
+                          href="/shenzhou.pdf" 
+                          target="_blank"
+                          className="text-4xl font-bold mb-2 block hover:text-emerald-500 transition-colors duration-300"
+                        >
+                          Software Engineer Intern
+                        </a>
+                        
                         <p className="text-emerald-400 text-2xl font-bold mb-4">
                           Shenzhou Digital Rongxin Software Co., Ltd. | Beijing, China | Dec 2025 – Jan 2026
                         </p>
                         
-                        {/* ✅ SMALLER DESCRIPTION + LOOSER LINE SPACING */}
                         <p className="text-3xl text-gray-400 leading-relaxed mb-6">
                           Contributed to Heilongjiang Rural Credit Union's microservices platform: data mapping, protocol conversion, and online loan transaction interfaces (disbursement, repayment). Cross‑system debugging & log analysis.
                         </p>
                         
-                        {/* ✅ MUCH LARGER SKILL TAGS */}
                         <div className="flex flex-wrap gap-3">
                           <span className="bg-gray-800 text-xl font-bold px-6 py-3 rounded-lg text-emerald-300">Java</span>
                           <span className="bg-gray-800 text-xl font-bold px-6 py-3 rounded-lg text-emerald-300">Microservices</span>
@@ -505,21 +509,27 @@ export default function Home() {
                         </div>
                       </div>
 
+                      {/* FEIJIE INTERNSHIP */}
                       <div>
                         <div className="absolute -left-3 w-3 h-3 bg-emerald-500 rounded-full"></div>
-                        <h4 className="text-4xl font-bold mb-2">Software Engineer Intern</h4>
                         
-                        {/* ✅ BIGGER COMPANY & DATE FONT */}
+                        {/* CLICKABLE + HOVER EFFECT */}
+                        <a 
+                          href="/FeiJie.pdf" 
+                          target="_blank"
+                          className="text-4xl font-bold mb-2 block hover:text-emerald-500 transition-colors duration-300"
+                        >
+                          Software Engineer Intern
+                        </a>
+                        
                         <p className="text-emerald-400 text-2xl font-bold mb-4">
                           Harbin FeiJie Technology Co., Ltd. | Harbin, China | Jan 2024 – Feb 2024
                         </p>
                         
-                        {/* ✅ SMALLER DESCRIPTION + LOOSER LINE SPACING */}
                         <p className="text-3xl text-gray-400 leading-relaxed mb-6">
                           Developed and maintained ATMP transaction system (C, UE/ACIDE tools, WinSQL). Involved in full workflow: message parsing, core banking communication, performance optimization.
                         </p>
                         
-                        {/* ✅ MUCH LARGER SKILL TAGS */}
                         <div className="flex flex-wrap gap-3">
                           <span className="bg-gray-800 text-xl font-bold px-6 py-3 rounded-lg text-emerald-300">C</span>
                           <span className="bg-gray-800 text-xl font-bold px-6 py-3 rounded-lg text-emerald-300">Banking systems</span>
@@ -531,7 +541,6 @@ export default function Home() {
 
                   {/* EDUCATION */}
                   <div>
-                    {/* ✅ MORE SPACE BELOW TITLE */}
                     <div className="flex items-center gap-2 mb-10">
                       <i className="fas fa-graduation-cap text-emerald-500 text-2xl"></i>
                       <h3 className={`${SIZES.h3} font-bold`}>Education</h3>
@@ -541,14 +550,11 @@ export default function Home() {
                       <div className="bg-gray-900 p-8 rounded-lg border border-gray-800">
                         <div className="flex justify-between flex-wrap items-center mb-6">
                           <h4 className="text-4xl font-bold">BSc Computer Science</h4>
-                          {/* ✅ BIGGER DATE FONT */}
                           <span className="text-emerald-400 text-2xl font-bold">Sep 2024 – June 2028 (Expected)</span>
                         </div>
                         
-                        {/* ✅ BIGGER SCHOOL NAME */}
                         <p className="text-gray-300 text-xl font-semibold mb-4">City University of Hong Kong</p>
                         
-                        {/* ✅ SMALLER DESCRIPTION + LOOSER LINE SPACING */}
                         <p className="text-3xl text-gray-400 leading-relaxed">
                           Full Tuition Scholarship, Dean's List (2024-25), CityU Tiger Talent Award. Tiger Ambassador, Excellence Committee Member. IELTS 8.0 (Listening 8.5, Reading 8.5).
                         </p>
@@ -557,14 +563,11 @@ export default function Home() {
                       <div className="bg-gray-900 p-8 rounded-lg border border-gray-800">
                         <div className="flex justify-between flex-wrap items-center mb-6">
                           <h4 className="text-4xl font-bold">High School (A‑Level)</h4>
-                          {/* ✅ BIGGER DATE FONT */}
                           <span className="text-emerald-400 text-2xl font-bold">Sep 2021 – June 2024</span>
                         </div>
                         
-                        {/* ✅ BIGGER SCHOOL NAME */}
                         <p className="text-gray-300 text-xl font-semibold mb-4">Harbin No.9 High School International Department</p>
                         
-                        {/* ✅ SMALLER DESCRIPTION + LOOSER LINE SPACING */}
                         <p className="text-3xl text-gray-400 leading-relaxed">
                           4A* in Mathematics, Further Mathematics, Physics, Chemistry.
                         </p>
