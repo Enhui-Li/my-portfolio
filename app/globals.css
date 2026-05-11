@@ -1,26 +1,118 @@
 @import "tailwindcss";
-
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+html {
+  font-size: 16px;
+  box-sizing: border-box;
+  width: 100%;
+  overflow-x: hidden;
 }
-
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+*, *::before, *::after {
+  box-sizing: inherit;
+  scroll-behavior: smooth;
 }
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Inter', sans-serif;
+  background: #000;
+  color: #fff;
+  position: relative;
+  margin: 0;
+  font-size: 1rem;
+  line-height: 1.5;
+  width: 100%;
+  min-height: 100vh;
+  overflow-x: hidden;
 }
+
+/* Background grid (same as your original) */
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: 
+    linear-gradient(rgba(16, 185, 129, 0.03) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(16, 185, 129, 0.03) 1px, transparent 1px);
+  background-size: 40px 40px;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.loading-screen {
+  transition: opacity 0.8s ease;
+}
+
+.progress-bar {
+  width: 200px;
+  height: 4px;
+  background: #1f2937;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.progress-fill {
+  width: 0%;
+  height: 100%;
+  background: #10b981;
+  transition: width 0.2s ease;
+}
+
+.project-card {
+  transition: all 0.3s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 20px 35px -12px rgba(16, 185, 129, 0.25);
+}
+
+.nav-link.active {
+  color: #10b981;
+}
+
+.nav-link.active::after {
+  width: 100%;
+}
+
+/* The underline effect for nav links */
+.nav-link {
+  position: relative;
+}
+.nav-link::after {
+  content: '';
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: #10b981;
+  transition: width 0.3s;
+}
+.nav-link:hover::after {
+  width: 100%;
+}
+
+.scroll-to-top {
+  cursor: pointer;
+  transition: all 0.3s;
+}
+.scroll-to-top:hover {
+  background-color: #10b981;
+  color: black;
+}
+
+.skill-tag {
+  transition: all 0.2s;
+}
+.skill-tag:hover {
+  background-color: rgba(16, 185, 129, 0.1);
+  border-color: rgba(16, 185, 129, 0.25);
+}
+
+.glow-border {
+  transition: box-shadow 0.3s ease;
+}
+.glow-border:hover {
+  box-shadow: 0 0 12px rgba(16, 185, 129, 0.3);
+}
+
