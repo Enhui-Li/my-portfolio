@@ -659,7 +659,33 @@ export default function Home() {
                     <div className="absolute -inset-1 bg-gradient-to-r from-emerald-500/20 to-teal-600/20 blur-xl"></div>
                     <div className="relative z-10">
                       <h3 className={`${SIZES.h3} font-bold mb-8 text-center md:text-left`}>Send Me a Message</h3>
-                      <form className="space-y-6">
+
+                      <form 
+                        className="space-y-6"
+                        onSubmit={(e) => {
+                          e.preventDefault();
+
+                          // 获取表单值
+                          const name = e.target[0].value.trim();
+                          const email = e.target[1].value.trim();
+                          const subject = e.target[2].value.trim();
+                          const message = e.target[3].value.trim();
+
+                          // 验证不能为空
+                          if (!name || !email || !subject || !message) {
+                            alert("Please fill in ALL fields (Name, Email, Subject, Message) before sending.");
+                            return;
+                          }
+
+                          // 拼接mailto真实发邮件
+                          const mailtoLink = `mailto:enhuili826@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(
+                            `From: ${name}\nEmail: ${email}\n\nMessage:\n${message}`
+                          )}`;
+
+                          // 打开邮件客户端发送
+                          window.open(mailtoLink, "_blank");
+                        }}
+                      >
                         <div>
                           <input 
                             type="text" 
