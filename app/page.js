@@ -381,7 +381,7 @@ export default function Home() {
             </section>
 
             {/* -------------------------------
-            ✅ PROJECTS: FIXED CARD HEIGHT + SKILLS FIXED TO BOTTOM
+            ✅ PROJECTS: FIXED CARD HEIGHT + SKILLS FIXED TO BOTTOM + GITHUB LINKS ADDED
             ------------------------------- */}
             <section id="projects" className={`${GLOBAL.sectionPadding} bg-black`}>
               <div className={GLOBAL.container}>
@@ -398,7 +398,7 @@ export default function Home() {
                     <div className="relative overflow-hidden flex-shrink-0">
                       <img src="/tetris.png" alt="Tetris project" className="w-full h-80 object-cover" />
                       <div className="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-all duration-300 flex items-center justify-center">
-                        <a target="_blank" className="bg-emerald-500 hover:bg-emerald-600 text-black rounded-full p-4 transform scale-90 group-hover:scale-100 transition-all duration-200 shadow-lg"><i className="fab fa-github text-xl"></i></a>
+                        <a href="https://github.com/Enhui-Li/tetris-big-data-analysis" target="_blank" className="bg-emerald-500 hover:bg-emerald-600 text-black rounded-full p-4 transform scale-90 group-hover:scale-100 transition-all duration-200 shadow-lg"><i className="fab fa-github text-xl"></i></a>
                       </div>
                     </div>
                     <div className="p-8 flex flex-col flex-grow">
@@ -419,7 +419,7 @@ export default function Home() {
                     <div className="relative overflow-hidden flex-shrink-0">
                       <img src="/petroleum_report.png" alt="ML publication" className="w-full h-80 object-cover" />
                       <div className="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-all duration-300 flex items-center justify-center">
-                        <a target="_blank" className="bg-emerald-500 hover:bg-emerald-600 text-black rounded-full p-4 transform scale-90 group-hover:scale-100 transition-all duration-200 shadow-lg"><i className="fab fa-github text-xl"></i></a>
+                        <a href="https://github.com/Enhui-Li/petroleum-price-forecasting" target="_blank" className="bg-emerald-500 hover:bg-emerald-600 text-black rounded-full p-4 transform scale-90 group-hover:scale-100 transition-all duration-200 shadow-lg"><i className="fab fa-github text-xl"></i></a>
                       </div>
                     </div>
                     <div className="p-8 flex flex-col flex-grow">
@@ -440,7 +440,7 @@ export default function Home() {
                     <div className="relative overflow-hidden flex-shrink-0">
                       <img src="/petroleum.png" alt="Car price pipeline" className="w-full h-80 object-cover" />
                       <div className="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-all duration-300 flex items-center justify-center">
-                        <a target="_blank" className="bg-emerald-500 hover:bg-emerald-600 text-black rounded-full p-4 transform scale-90 group-hover:scale-100 transition-all duration-200 shadow-lg"><i className="fab fa-github text-xl"></i></a>
+                        <a href="https://github.com/Enhui-Li/car-price-prediction-pipeline" target="_blank" className="bg-emerald-500 hover:bg-emerald-600 text-black rounded-full p-4 transform scale-90 group-hover:scale-100 transition-all duration-200 shadow-lg"><i className="fab fa-github text-xl"></i></a>
                       </div>
                     </div>
                     <div className="p-8 flex flex-col flex-grow">
