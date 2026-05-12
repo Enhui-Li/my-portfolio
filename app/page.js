@@ -177,10 +177,10 @@ export default function Home() {
                     
                     {/* ✅ 加宽容器 + 加大行距（leading-loose / leading-relaxed） */}
                     <p className={`${SIZES.body} text-gray-400 mb-12 max-w-6xl leading-relaxed`}>
-                      I'm a Computer Science student at CityU Hong Kong with internship experience in enterprise
-                      microservices and banking transaction systems. I've co‑authored a published ML paper and built
-                      data pipelines for game analytics. I write clean, maintainable code and I'm ready to contribute to
-                      production systems.
+                      I’m a Computer Science undergraduate at City University of Hong Kong with practical internship experience in 
+                      enterprise microservices and banking transaction systems. I have co-authored a published machine learning paper 
+                      and built data analysis pipelines for real-world scenarios. I focus on writing clean, robust code and am eager 
+                      to bring value to professional engineering teams.
                     </p>
                     
                     {/* ✅ 超级大按钮：更宽、更大、字体更大 */}
@@ -230,11 +230,10 @@ export default function Home() {
                     <h3 className={`${SIZES.h3} font-bold mb-6`}><span className="text-emerald-500">&lt;</span> Software Engineer <span className="text-emerald-500">/&gt;</span></h3>
                     {/* WIDER CONTAINER + MORE LINE SPACING + BIGGER TEXT */}
                     <p className={`${SIZES.body} text-gray-400 mb-12 max-w-6xl leading-relaxed`}>
-                      I'm a software engineer with hands‑on experience in enterprise microservices (Heilongjiang Rural
-                      Credit Union) and banking ATMP systems (C, UE/ACIDE, WinSQL). I've also led a big data Tetris
-                      analytics project and co‑authored a petroleum price forecasting paper (CONF‑SEML 2023). I'm
-                      comfortable across the stack: Java, Python, JavaScript, SQL, and Linux/Unix. I'm looking for
-                      software engineering roles where I can build practical, scalable solutions.
+                      I’m a diligent and practical Computer Science student with hands-on experience in enterprise microservices development 
+                      and banking transaction systems. I have participated in big data analytics projects and co-authored a published machine 
+                      learning paper. I work steadily across backend, data, and system development, and I’m keen to join a professional team 
+                      to keep learning while delivering reliable, production-ready solutions.
                     </p>
                     {/* BIGGER INFO BOXES */}
                     <div className="grid grid-cols-2 gap-4 text-2xl font-mono mb-8">
@@ -403,7 +402,7 @@ export default function Home() {
                     </div>
                     <div className="p-8 flex flex-col flex-grow">
                       <h3 className={`${SIZES.h3} font-bold mb-4`}>Big Data Analysis – Competitive Tetris</h3>
-                      <p className={`${SIZES.body} text-gray-400 leading-relaxed mb-auto`}>Led frequent itemset & association rule mining (Apriori) on 10k+ game records, identifying skill clusters. Used Python (Pandas) and Weka.</p>
+                      <p className={`${SIZES.body} text-gray-400 leading-relaxed mb-auto`}>I took part in analyzing competitive Tetris player data using the Apriori algorithm, processed over 10k game records, and helped discover player behavior patterns. Used Python and Weka for data preprocessing and analysis.</p>
                       
                       {/* SKILLS FIXED AT BOTTOM */}
                       <div className="mt-8 flex flex-wrap gap-3">
@@ -424,7 +423,7 @@ export default function Home() {
                     </div>
                     <div className="p-8 flex flex-col flex-grow">
                       <h3 className={`${SIZES.h3} font-bold mb-4`}>Petroleum Price Forecasting (SEML 2023)</h3>
-                      <p className={`${SIZES.body} text-gray-400 leading-relaxed mb-auto`}>Co‑developed linear regression & random forest models for global oil price prediction. Paper published in CONF‑SEML 2023.</p>
+                      <p className={`${SIZES.body} text-gray-400 leading-relaxed mb-auto`}>I collaborated on building regression and random forest models for petroleum price forecasting. Our work was accepted and published at the International Conference on Software Engineering and Machine Learning (CONF-SEML 2023).</p>
                       
                       {/* SKILLS FIXED AT BOTTOM */}
                       <div className="mt-8 flex flex-wrap gap-3">
@@ -445,7 +444,7 @@ export default function Home() {
                     </div>
                     <div className="p-8 flex flex-col flex-grow">
                       <h3 className={`${SIZES.h3} font-bold mb-4`}>Car Price Prediction Pipeline</h3>
-                      <p className={`${SIZES.body} text-gray-400 leading-relaxed mb-auto`}>Object‑oriented Python pipeline for car price prediction via linear regression (Oxford University project‑based course).</p>
+                      <p className={`${SIZES.body} text-gray-400 leading-relaxed mb-auto`}>I built an object-oriented Python pipeline for car price prediction as part of an Oxford University-based machine learning course.</p>
                       
                       {/* SKILLS FIXED AT BOTTOM */}
                       <div className="mt-8 flex flex-wrap gap-3">
@@ -499,7 +498,10 @@ export default function Home() {
                         </p>
                         
                         <p className="text-3xl text-gray-400 leading-relaxed mb-6">
-                          Contributed to Heilongjiang Rural Credit Union's microservices platform: data mapping, protocol conversion, and online loan transaction interfaces (disbursement, repayment). Cross‑system debugging & log analysis.
+                          I participated in developing the enterprise microservices platform for 
+                          Heilongjiang Rural Credit Union, responsible for data mapping, protocol 
+                          configuration, and core online loan transaction interfaces. I completed 
+                          cross-system joint debugging and log maintenance to ensure stable system running.
                         </p>
                         
                         <div className="flex flex-wrap gap-3">
@@ -527,7 +529,9 @@ export default function Home() {
                         </p>
                         
                         <p className="text-3xl text-gray-400 leading-relaxed mb-6">
-                          Developed and maintained ATMP transaction system (C, UE/ACIDE tools, WinSQL). Involved in full workflow: message parsing, core banking communication, performance optimization.
+                          I developed and maintained the bank’s ATMP transaction system, covering the full 
+                          workflow from message parsing to system communication. I gained solid experience 
+                          with C, banking tools, and Unix, and worked with the team to improve system stability and performance.
                         </p>
                         
                         <div className="flex flex-wrap gap-3">
@@ -588,7 +592,8 @@ export default function Home() {
                   <div className="w-20 h-1 bg-gradient-to-r from-emerald-500 to-teal-500 mx-auto mt-2 rounded-full mb-4"></div>
                   {/* ✅ WIDER DESCRIPTION (MATCH ALL OTHER SECTIONS) */}
                   <p className="text-3xl text-gray-400 max-w-6xl mx-auto leading-relaxed">
-                    Have a project, an opportunity, or just want to chat? I'd love to hear from you. Reach out anytime.
+                    If you have a suitable opportunity or would like to know more about my experience, 
+                    I’m very happy to connect and communicate. Thank you for your time!
                   </p>
                 </div>
 
