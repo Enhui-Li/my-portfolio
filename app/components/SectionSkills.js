@@ -49,7 +49,7 @@ export default function SectionSkills() {
                 <h4 className="text-3xl font-bold text-emerald-400 mb-4">Programming Languages</h4>
                 <div className="flex flex-wrap gap-4">
                   {['Python','C','C++','JavaScript','Java','Node.js','React','HTML','CSS','Unix Shell','SQL'].map(l => 
-                    <span key={l} className="bg-gray-800 px-6 py-3 rounded-full text-xl font-bold border border-gray-700 transition-all duration-300 hover:bg-emerald-100 hover:text-black hover:scale-110">{l}</span>
+                    <span key={l} className="bg-gray-800 px-6 py-3 rounded-full text-xl font-bold border border-gray-700 transition-all duration-300 hover:bg-emerald-400 hover:text-black hover:scale-110">{l}</span>
                   )}
                 </div>
               </div>
@@ -57,7 +57,7 @@ export default function SectionSkills() {
                 <h4 className="text-3xl font-bold text-emerald-400 mb-4">Development Tools</h4>
                 <div className="flex flex-wrap gap-4">
                   {['Eclipse','BlueJ','Visual Paradigm','UE','ACIDE','WinSQL'].map(t => 
-                    <span key={t} className="bg-gray-800 px-6 py-3 rounded-full text-xl font-bold border border-gray-700 transition-all duration-300 hover:bg-emerald-100 hover:text-black hover:scale-110">{t}</span>
+                    <span key={t} className="bg-gray-800 px-6 py-3 rounded-full text-xl font-bold border border-gray-700 transition-all duration-300 hover:bg-emerald-400 hover:text-black hover:scale-110">{t}</span>
                   )}
                 </div>
               </div>
@@ -65,7 +65,7 @@ export default function SectionSkills() {
                 <h4 className="text-3xl font-bold text-emerald-400 mb-4">Data & ML Tools</h4>
                 <div className="flex flex-wrap gap-4">
                   {['TensorFlow','Weka','Pandas','Data Analysis Tools','Log Analysis Tools'].map(t => 
-                    <span key={t} className="bg-gray-800 px-6 py-3 rounded-full text-xl font-bold border border-gray-700 transition-all duration-300 hover:bg-emerald-100 hover:text-black hover:scale-110">{t}</span>
+                    <span key={t} className="bg-gray-800 px-6 py-3 rounded-full text-xl font-bold border border-gray-700 transition-all duration-300 hover:bg-emerald-400 hover:text-black hover:scale-110">{t}</span>
                   )}
                 </div>
               </div>
@@ -73,7 +73,7 @@ export default function SectionSkills() {
                 <h4 className="text-3xl font-bold text-emerald-400 mb-4">Banking & Enterprise Platforms</h4>
                 <div className="flex flex-wrap gap-4">
                   {['Microservices Platform','Service Governance','ATMP System','Log Platform'].map(i => 
-                    <span key={i} className="bg-gray-800 px-6 py-3 rounded-full text-xl font-bold border border-gray-700 transition-all duration-300 hover:bg-emerald-100 hover:text-black hover:scale-110">{i}</span>
+                    <span key={i} className="bg-gray-800 px-6 py-3 rounded-full text-xl font-bold border border-gray-700 transition-all duration-300 hover:bg-emerald-400 hover:text-black hover:scale-110">{i}</span>
                   )}
                 </div>
               </div>
@@ -86,7 +86,7 @@ export default function SectionSkills() {
                 <h4 className="text-3xl font-bold text-emerald-400 mb-4">Software & Architecture</h4>
                 <div className="flex flex-wrap gap-4">
                   {['Microservices','Service Governance','OOP','Design Patterns','System Integration'].map(c => 
-                    <span key={c} className="bg-gray-800 px-6 py-3 rounded-full text-xl font-bold border border-gray-700 transition-all duration-300 hover:bg-emerald-100 hover:text-black hover:scale-110">{c}</span>
+                    <span key={c} className="bg-gray-800 px-6 py-3 rounded-full text-xl font-bold border border-gray-700 transition-all duration-300 hover:bg-emerald-400 hover:text-black hover:scale-110">{c}</span>
                   )}
                 </div>
               </div>
@@ -94,7 +94,7 @@ export default function SectionSkills() {
                 <h4 className="text-3xl font-bold text-emerald-400 mb-4">Banking & Financial Systems</h4>
                 <div className="flex flex-wrap gap-4">
                   {['Financial Transaction Processing','Protocol Conversion','Data Tagging','Data Governance'].map(i => 
-                    <span key={i} className="bg-gray-800 px-6 py-3 rounded-full text-xl font-bold border border-gray-700 transition-all duration-300 hover:bg-emerald-100 hover:text-black hover:scale-110">{i}</span>
+                    <span key={i} className="bg-gray-800 px-6 py-3 rounded-full text-xl font-bold border border-gray-700 transition-all duration-300 hover:bg-emerald-400 hover:text-black hover:scale-110">{i}</span>
                   )}
                 </div>
               </div>
@@ -102,7 +102,7 @@ export default function SectionSkills() {
                 <h4 className="text-3xl font-bold text-emerald-400 mb-4">Data & Machine Learning</h4>
                 <div className="flex flex-wrap gap-4">
                   {['Data Preprocessing','Regression','Random Forest','Statistical Modeling','Data Mapping'].map(i => 
-                    <span key={i} className="bg-gray-800 px-6 py-3 rounded-full text-xl font-bold border border-gray-700 transition-all duration-300 hover:bg-emerald-100 hover:text-black hover:scale-110">{i}</span>
+                    <span key={i} className="bg-gray-800 px-6 py-3 rounded-full text-xl font-bold border border-gray-700 transition-all duration-300 hover:bg-emerald-400 hover:text-black hover:scale-110">{i}</span>
                   )}
                 </div>
               </div>
@@ -110,7 +110,7 @@ export default function SectionSkills() {
                 <h4 className="text-3xl font-bold text-emerald-400 mb-4">System Operations</h4>
                 <div className="flex flex-wrap gap-4">
                   {['Linux/Unix Commands','Log O&M','System Debugging','Database Operations'].map(i => 
-                    <span key={i} className="bg-gray-800 px-6 py-3 rounded-full text-xl font-bold border border-gray-700 transition-all duration-300 hover:bg-emerald-100 hover:text-black hover:scale-110">{i}</span>
+                    <span key={i} className="bg-gray-800 px-6 py-3 rounded-full text-xl font-bold border border-gray-700 transition-all duration-300 hover:bg-emerald-400 hover:text-black hover:scale-110">{i}</span>
                   )}
                 </div>
               </div>
