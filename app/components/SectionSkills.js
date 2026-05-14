@@ -48,7 +48,7 @@ export default function SectionSkills() {
               <div className="mb-8">
                 <h4 className="text-3xl font-bold text-emerald-400 mb-4">Programming Languages</h4>
                 <div className="flex flex-wrap gap-4">
-                  {['Python','C','C++','JavaScript','React','Node.js','Java','HTML','CSS','R','Unix','Linux'].map(l => 
+                  {['Python','C','C++','JavaScript','Java','Node.js','React','HTML','CSS','Unix Shell','SQL'].map(l => 
                     <span key={l} className="bg-gray-800 px-6 py-3 rounded-full text-xl font-bold border border-gray-700">{l}</span>
                   )}
                 </div>
@@ -56,23 +56,23 @@ export default function SectionSkills() {
               <div className="mb-8">
                 <h4 className="text-3xl font-bold text-emerald-400 mb-4">Development Tools</h4>
                 <div className="flex flex-wrap gap-4">
-                  {['BlueJ','Visual Paradigm','Eclipse','WinSQL','Logisim'].map(t => 
+                  {['Eclipse','BlueJ','Visual Paradigm','UE','ACIDE','WinSQL'].map(t => 
                     <span key={t} className="bg-gray-800 px-6 py-3 rounded-full text-xl font-bold border border-gray-700">{t}</span>
                   )}
                 </div>
               </div>
               <div className="mb-8">
-                <h4 className="text-3xl font-bold text-emerald-400 mb-4">Data/Analysis Tools</h4>
+                <h4 className="text-3xl font-bold text-emerald-400 mb-4">Data & ML Tools</h4>
                 <div className="flex flex-wrap gap-4">
-                  {['TensorFlow','Gephi','Tanagra','Octave','Weka','Log Analysis Tools'].map(t => 
+                  {['TensorFlow','Weka','Pandas','Data Analysis Tools','Log Analysis Tools'].map(t => 
                     <span key={t} className="bg-gray-800 px-6 py-3 rounded-full text-xl font-bold border border-gray-700">{t}</span>
                   )}
                 </div>
               </div>
               <div>
-                <h4 className="text-3xl font-bold text-emerald-400 mb-4">Banking/Enterprise Systems</h4>
+                <h4 className="text-3xl font-bold text-emerald-400 mb-4">Banking & Enterprise Platforms</h4>
                 <div className="flex flex-wrap gap-4">
-                  {['Service Governance Platforms','ATMP/UE/ACIDE','Protocol Conversion'].map(i => 
+                  {['Microservices Platform','Service Governance','ATMP System','Log Platform'].map(i => 
                     <span key={i} className="bg-gray-800 px-6 py-3 rounded-full text-xl font-bold border border-gray-700">{i}</span>
                   )}
                 </div>
@@ -83,33 +83,33 @@ export default function SectionSkills() {
               <h3 className={`${SIZES.h3} font-bold flex items-center gap-2 mb-10`}><i className="fas fa-brain text-emerald-500"></i> Key Concepts</h3>
               
               <div className="mb-8">
-                <h4 className="text-3xl font-bold text-emerald-400 mb-4">Software Engineering</h4>
+                <h4 className="text-3xl font-bold text-emerald-400 mb-4">Software & Architecture</h4>
                 <div className="flex flex-wrap gap-4">
-                  {['Microservices','OOP','Design Patterns','Graph Algorithms','Advanced Sorting','Socket Programming'].map(c => 
+                  {['Microservices','Service Governance','OOP','Design Patterns','System Integration'].map(c => 
                     <span key={c} className="bg-gray-800 px-6 py-3 rounded-full text-xl font-bold border border-gray-700">{c}</span>
                   )}
                 </div>
               </div>
               <div className="mb-8">
-                <h4 className="text-3xl font-bold text-emerald-400 mb-4">Database</h4>
+                <h4 className="text-3xl font-bold text-emerald-400 mb-4">Banking & Financial Systems</h4>
                 <div className="flex flex-wrap gap-4">
-                  {['SQL','Normalization','Data Mapping','Data Preprocessing'].map(i => 
+                  {['Financial Transaction Processing','Protocol Conversion','Data Tagging','Data Governance'].map(i => 
                     <span key={i} className="bg-gray-800 px-6 py-3 rounded-full text-xl font-bold border border-gray-700">{i}</span>
                   )}
                 </div>
               </div>
               <div className="mb-8">
-                <h4 className="text-3xl font-bold text-emerald-400 mb-4">Data Science</h4>
+                <h4 className="text-3xl font-bold text-emerald-400 mb-4">Data & Machine Learning</h4>
                 <div className="flex flex-wrap gap-4">
-                  {['Regression','Random Forest','Statistical Modeling'].map(i => 
+                  {['Data Preprocessing','Regression','Random Forest','Statistical Modeling','Data Mapping'].map(i => 
                     <span key={i} className="bg-gray-800 px-6 py-3 rounded-full text-xl font-bold border border-gray-700">{i}</span>
                   )}
                 </div>
               </div>
               <div>
-                <h4 className="text-3xl font-bold text-emerald-400 mb-4">Systems & Networking</h4>
+                <h4 className="text-3xl font-bold text-emerald-400 mb-4">System Operations</h4>
                 <div className="flex flex-wrap gap-4">
-                  {['Memory/Process Management','TCP/IP','HTTP(S)','Protocol Conversion'].map(i => 
+                  {['Linux/Unix Commands','Log O&M','System Debugging','Database Operations'].map(i => 
                     <span key={i} className="bg-gray-800 px-6 py-3 rounded-full text-xl font-bold border border-gray-700">{i}</span>
                   )}
                 </div>
