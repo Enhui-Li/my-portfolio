@@ -13,7 +13,9 @@ export default function SectionProjects() {
           </p>
         </div>
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-          <div className="bg-gray-900 rounded-lg overflow-hidden border border-gray-800 transition-all duration-300 relative group h-[850px] flex flex-col">
+
+          {/* PROJECT 1 - INCREASED HEIGHT */}
+          <div className="bg-gray-900 rounded-lg overflow-hidden border border-gray-800 transition-all duration-300 relative group h-[950px] flex flex-col">
             <div className="relative overflow-hidden flex-shrink-0">
               <img src="/tetris.png" alt="Tetris project" className="w-full h-80 object-cover" />
               <div className="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-all duration-300 flex items-center justify-center">
@@ -31,7 +33,8 @@ export default function SectionProjects() {
             </div>
           </div>
 
-          <div className="bg-gray-900 rounded-lg overflow-hidden border border-gray-800 transition-all duration-300 relative group h-[850px] flex flex-col">
+          {/* PROJECT 2 - INCREASED HEIGHT */}
+          <div className="bg-gray-900 rounded-lg overflow-hidden border border-gray-800 transition-all duration-300 relative group h-[950px] flex flex-col">
             <div className="relative overflow-hidden flex-shrink-0">
               <img src="/petroleum_report.png" alt="ML publication" className="w-full h-80 object-cover" />
               <div className="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-all duration-300 flex items-center justify-center">
@@ -49,7 +52,8 @@ export default function SectionProjects() {
             </div>
           </div>
 
-          <div className="bg-gray-900 rounded-lg overflow-hidden border border-gray-800 transition-all duration-300 relative group h-[850px] flex flex-col">
+          {/* PROJECT 3 - INCREASED HEIGHT */}
+          <div className="bg-gray-900 rounded-lg overflow-hidden border border-gray-800 transition-all duration-300 relative group h-[950px] flex flex-col">
             <div className="relative overflow-hidden flex-shrink-0">
               <img src="/petroleum.png" alt="Car price pipeline" className="w-full h-80 object-cover" />
               <div className="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-all duration-300 flex items-center justify-center">
@@ -66,6 +70,7 @@ export default function SectionProjects() {
               </div>
             </div>
           </div>
+
         </div>
       </div>
     </section>
