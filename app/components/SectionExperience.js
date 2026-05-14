@@ -24,7 +24,10 @@ export default function SectionExperience() {
                 <a href="/shenzhou.pdf" target="_blank" className="text-4xl font-bold mb-2 block hover:text-emerald-500 transition-colors duration-300">Software Engineer Intern</a>
                 <p className="text-emerald-400 text-2xl font-bold mb-4">Shenzhou Digital Rongxin Software Co., Ltd. | Beijing, China | Dec 2025 – Jan 2026</p>
                 <p className="text-3xl text-gray-400 leading-relaxed mb-6">
-                  I participated in developing the enterprise microservices platform for Heilongjiang Rural Credit Union, responsible for data mapping, protocol configuration, and core online loan transaction interfaces.
+                  I participated in developing the enterprise microservices platform for 
+                  Heilongjiang Rural Credit Union, responsible for data mapping, protocol 
+                  configuration, and core online loan transaction interfaces. I completed 
+                  cross-system joint debugging and log maintenance to ensure stable system running.
                 </p>
                 <div className="flex flex-wrap gap-3">
                   <span className="bg-gray-800 text-xl font-bold px-6 py-3 rounded-lg text-emerald-300">Java</span>
@@ -37,7 +40,9 @@ export default function SectionExperience() {
                 <a href="/FeiJie.pdf" target="_blank" className="text-4xl font-bold mb-2 block hover:text-emerald-500 transition-colors duration-300">Software Engineer Intern</a>
                 <p className="text-emerald-400 text-2xl font-bold mb-4">Harbin FeiJie Technology Co., Ltd. | Harbin, China | Jan 2024 – Feb 2024</p>
                 <p className="text-3xl text-gray-400 leading-relaxed mb-6">
-                  I developed and maintained the bank’s ATMP transaction system, covering the full workflow from message parsing to system communication.
+                  I developed and maintained the bank’s ATMP transaction system, covering the full 
+                  workflow from message parsing to system communication. I gained solid experience 
+                  with C, banking tools, and Unix, and worked with the team to improve system stability and performance.
                 </p>
                 <div className="flex flex-wrap gap-3">
                   <span className="bg-gray-800 text-xl font-bold px-6 py-3 rounded-lg text-emerald-300">C</span>
