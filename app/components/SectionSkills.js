@@ -17,7 +17,17 @@ export default function SectionSkills() {
             <div className="bg-gray-900/80 backdrop-blur-sm p-10 rounded-lg border border-gray-800 h-full">
               <h3 className={`${SIZES.h3} font-bold flex items-center gap-2 mb-10`}><i className="fas fa-chart-line text-emerald-500"></i> Technical Proficiency</h3>
               <div className="space-y-8">
-                {SKILLS_PROFICIENCY.map((skill) => (
+                {[
+                  { label: 'HTML/CSS', pct: 85 },
+                  { label: 'Node.js', pct: 85 },
+                  { label: 'React', pct: 80 },
+                  { label: 'JavaScript', pct: 75 },
+                  { label: 'Python', pct: 70 },
+                  { label: 'Java', pct: 70 },
+                  { label: 'SQL', pct: 65 },
+                  { label: 'C / C++', pct: 65 },
+                  { label: 'Linux/Unix', pct: 60 },
+                ].map((skill) => (
                   <div key={skill.label}>
                     <div className="flex justify-between mb-3">
                       <span className={SIZES.body}>{skill.label}</span>
@@ -38,7 +48,7 @@ export default function SectionSkills() {
               <div className="mb-8">
                 <h4 className="text-3xl font-bold text-emerald-400 mb-4">Programming Languages</h4>
                 <div className="flex flex-wrap gap-4">
-                  {['Python','C','C++','JavaScript','Node.js','Java','HTML','CSS','R','Unix','Linux'].map(l => 
+                  {['Python','C','C++','JavaScript','React','Node.js','Java','HTML','CSS','R','Unix','Linux'].map(l => 
                     <span key={l} className="bg-gray-800 px-6 py-3 rounded-full text-xl font-bold border border-gray-700">{l}</span>
                   )}
                 </div>
