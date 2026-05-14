@@ -16,7 +16,7 @@ export default function SectionSkills() {
           <div className="md:col-span-5">
             <div className="bg-gray-900/80 backdrop-blur-sm p-10 rounded-lg border border-gray-800 h-full">
               <h3 className={`${SIZES.h3} font-bold flex items-center gap-2 mb-10`}><i className="fas fa-chart-line text-emerald-500"></i> Technical Proficiency</h3>
-              <div className="space-y-10"> {/* INCREASED SPACING HERE */}
+              <div className="space-y-20"> {/* INCREASED SPACING HERE */}
                 {[
                   { label: 'HTML/CSS', pct: 85 },
                   { label: 'Node.js', pct: 85 },
