@@ -1,19 +1,16 @@
 'use client';
-const ProgressBar = ({ percent, label }) => {
+import { SIZES } from '../../config/constants';
+
+export default function ProgressBar({ label, pct }) {
   return (
-    <div className="mb-6">
-      <div className="flex justify-between text-white text-xl mb-2">
-        <span>{label}</span>
-        <span>{percent}%</span>
+    <div>
+      <div className="flex justify-between mb-3">
+        <span className={SIZES.body}>{label}</span>
+        <span className={`${SIZES.body} text-emerald-500`}>{pct}%</span>
       </div>
-      <div className="w-full h-4 bg-gray-800 rounded-full overflow-hidden">
-        <div
-          className="h-full bg-emerald-500 transition-all duration-700"
-          style={{ width: `${percent}%` }}
-        ></div>
+      <div className="w-full bg-gray-700 rounded-full h-4">
+        <div className="bg-gradient-to-r from-emerald-500 to-teal-500 h-full rounded-full" style={{ width: `${pct}%` }}></div>
       </div>
     </div>
   );
-};
-
-export default ProgressBar;
+}

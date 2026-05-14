@@ -1,43 +1,47 @@
 'use client';
 import { useState } from 'react';
-import { NAV_LINKS, GLOBAL } from '../config/constants';
+import { GLOBAL, SIZES, NAV_ITEMS, SOCIALS } from '../config/constants';
 import MobileMenu from './MobileMenu';
-import Button from './UI/Button';
 
-const Header = () => {
+export default function Header({ activeSection, downloadResume }) {
   const [mobileOpen, setMobileOpen] = useState(false);
-
-  const downloadCV = () => {
-    window.open('/CV_.pdf', '_blank');
-  };
+  const closeMobile = () => setMobileOpen(false);
 
   return (
-    <header className="fixed top-0 left-0 w-full bg-black/90 backdrop-blur-md z-40 border-b border-gray-800">
-      <div className={GLOBAL.container}>
-        <div className="flex justify-between items-center h-20">
-          <a href="#home" className="text-emerald-500 text-3xl font-bold">Enhui Li</a>
+    <header className="fixed top-0 w-full z-50 bg-black/80 backdrop-blur-md border-b border-gray-800">
+      <div className="w-full max-w-screen-1xl mx-auto px-12 md:px-16 lg:px-50 py-5 flex items-center justify-between">
+        <a href="#home" className="flex items-center space-x-2" onClick={closeMobile}>
+          <i className="fas fa-code text-emerald-500 text-5xl"></i>
+          <span className="font-bold text-5xl">
+            <span className="text-emerald-500">&lt;</span>Enhui<span className="text-emerald-500">/&gt;</span>
+          </span>
+        </a>
 
-          <div className="hidden md:flex items-center gap-8">
-            {NAV_LINKS.map((link) => (
-              <a
-                key={link.id}
-                href={`#${link.id}`}
-                className="text-white text-xl hover:text-emerald-500 transition"
-              >
-                {link.label}
-              </a>
-            ))}
-            <Button onClick={downloadCV}>Download CV</Button>
+        <nav className="hidden md:flex items-center space-x-12">
+          {NAV_ITEMS.map(([id, label]) => (
+            <a key={id} href={`#${id}`} className={`${SIZES.small} font-medium hover:text-emerald-500 ${activeSection === id ? 'text-emerald-500' : 'text-white'}`}>
+              {label}
+            </a>
+          ))}
+
+          <div className="flex items-center space-x-10">
+            <a href={SOCIALS.github} target="_blank"><i className="fab fa-github text-4xl text-gray-300 hover:text-emerald-500"></i></a>
+            <a href={SOCIALS.linkedin} target="_blank"><i className="fab fa-linkedin text-4xl text-gray-300 hover:text-emerald-500"></i></a>
+            <a href={SOCIALS.instagram} target="_blank"><i className="fab fa-instagram text-4xl text-gray-300 hover:text-emerald-500"></i></a>
+            <a href={SOCIALS.facebook} target="_blank"><i className="fab fa-facebook text-4xl text-gray-300 hover:text-emerald-500"></i></a>
           </div>
 
-          <button className="md:hidden text-white text-3xl" onClick={() => setMobileOpen(true)}>
-            <i className="fas fa-bars"></i>
+          <button onClick={downloadResume} className="ml-8 bg-emerald-500 hover:bg-emerald-600 text-black px-10 py-4 rounded-md text-3xl font-semibold">
+            Resume
           </button>
-        </div>
+        </nav>
+
+        <button onClick={() => setMobileOpen(!mobileOpen)} className="md:hidden text-white text-3xl">
+          <i className="fas fa-bars"></i>
+        </button>
       </div>
-      <MobileMenu open={mobileOpen} onClose={() => setMobileOpen(false)} />
+
+      <MobileMenu open={mobileOpen} closeMenu={closeMobile} downloadResume={downloadResume} />
     </header>
   );
-};
-
-export default Header;
+}
