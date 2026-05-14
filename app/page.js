@@ -1,5 +1,6 @@
 'use client';
 import { useState } from 'react';
+
 import LoadingScreen from './components/LoadingScreen';
 import Header from './components/Header';
 import SectionHome from './components/SectionHome';
@@ -14,6 +15,7 @@ export default function Home() {
   return (
     <main className="bg-black text-white overflow-x-hidden">
       {!loaded && <LoadingScreen onFinish={() => setLoaded(true)} />}
+      
       {loaded && (
         <>
           <Header />
