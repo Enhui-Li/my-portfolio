@@ -20,8 +20,10 @@ export default function SectionHome() {
             </div>
 
             <p className={`${SIZES.body} text-gray-400 mb-12 max-w-6xl leading-relaxed`}>
-              I’m a Computer Science undergraduate at City University of Hong Kong with practical internship experience in
-              enterprise microservices and banking transaction systems.
+              I’m a Computer Science undergraduate at City University of Hong Kong with practical internship experience in 
+              enterprise microservices and banking transaction systems. I have co-authored a published machine learning paper 
+              and built data analysis pipelines for real-world scenarios. I focus on writing clean, robust code and am eager 
+              to bring value to professional engineering teams.
             </p>
 
             <div className="flex gap-6 flex-wrap">

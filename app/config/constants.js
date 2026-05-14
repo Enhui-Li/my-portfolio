@@ -14,12 +14,7 @@ export const SIZES = {
 };
 
 export const NAV_ITEMS = [
-  ['home', 'Home'],
-  ['about', 'About'],
-  ['skills', 'Skills'],
-  ['projects', 'Projects'],
-  ['experience', 'Experience'],
-  ['contact', 'Contact'],
+  ['home','Home'],['about','About'],['skills','Skills'],['projects','Projects'],['experience','Experience'],['contact','Contact']
 ];
 
 export const SOCIALS = {

@@ -18,8 +18,10 @@ export default function SectionAbout({ downloadResume }) {
           <div>
             <h3 className={`${SIZES.h3} font-bold mb-6`}><span className="text-emerald-500">&lt;</span> Software Engineer <span className="text-emerald-500">/&gt;</span></h3>
             <p className={`${SIZES.body} text-gray-400 mb-12 max-w-6xl leading-relaxed`}>
-              I’m a diligent and practical Computer Science student with hands-on experience in enterprise microservices development
-              and banking transaction systems.
+              I’m a diligent and practical Computer Science student with hands-on experience in enterprise microservices development 
+              and banking transaction systems. I have participated in big data analytics projects and co-authored a published machine 
+              learning paper. I work steadily across backend, data, and system development, and I’m keen to join a professional team 
+              to keep learning while delivering reliable, production-ready solutions.
             </p>
             <div className="grid grid-cols-2 gap-4 text-2xl font-mono mb-8">
               <div className="bg-gray-900 p-4 rounded-lg border border-gray-800"><span className="text-emerald-500">const</span> <span className="text-purple-400">name</span> = <span className="text-yellow-300">'Enhui Li'</span>;</div>
